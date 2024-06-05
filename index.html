@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <aside>
+      <figure>
+        <img src="./image/spotify-logo.png" alt="" />
+        <img src="./image/no-text.png" alt="" class="no-text" />
+        <nav>
+          <a href=""><i class="bi bi-house-fill"></i><span>Anasayfa</span> </a>
+          <a href=""><i class="bi bi-search"></i> <span>Arama</span> </a>
+          <a href=""
+            ><i class="bi bi-collection"></i> <span>Kütüphane</span>
+          </a>
+          <a href=""
+            ><i class="bi bi-music-note-list"></i> <span>Çalma Listeleri</span>
+          </a>
+          <a href=""
+            ><i class="bi bi-heart"></i> <span>Beğenilen Şarkılar</span>
+          </a>
+        </nav>
+      </figure>
+    </aside>
+    <main>
+      <header>
+        <form>
+          <div class="search">
+            <div class="search-input">
+              <input type="search" placeholder="Müziğini seç...." />
+              <i class="bi bi-search"></i>
+            </div>
+          </div>
+          <i class="bi bi-menu-up" id="menu"></i>
+          <!-- menü içindeki kısımlar -->
+          <ul>
+            <li>Premium</li>
+            <li>Destek</li>
+            <li>Oturum Aç</li>
+            <li>Kayıt Ol</li>
+          </ul>
+        </form>
+      </header>
+      <div class="songs">
+        <h2>Popüler Müzikler</h2>
+        <div class="list">
+          <!-- <div class="card">
+            <figure>
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3f/c0/ea/3fc0eaac-cbcd-dc51-e961-1d85938d2ff9/196922765230_Cover.jpg/400x400cc.jpg"
+                alt=""
+              />
+              <div class="play">
+                <i class="bi bi-play-circle" id="play-btn"></i>
+              </div>
+            </figure>
+            <h4>title</h4>
+            <h4>title</h4>
+          </div>
+        </div>
+        <div class="list">
+          <div class="card">
+            <figure>
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3f/c0/ea/3fc0eaac-cbcd-dc51-e961-1d85938d2ff9/196922765230_Cover.jpg/400x400cc.jpg"
+                alt=""
+              />
+              <div class="play">
+                <i class="bi bi-play-circle" id="play-btn"></i>
+              </div>
+            </figure>
+            <h4>title</h4>
+            <h4>title</h4>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <div class="playing">
+      <div class="info">
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e025546f2ac6abc9cddd1c97556"
+          class="animate"
+          id="info-img"
+          alt=""
+        />
+        <div>
+          <p>Şuan Oynatılıyor.</p>
+          <h3>title</h3>
+        </div>
+      </div>
+      <audio controls>
+        <source />
+      </audio>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

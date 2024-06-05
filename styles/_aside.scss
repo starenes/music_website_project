@@ -1,0 +1,56 @@
+aside{
+    // border: 1px solid red;
+    margin: 10px;
+    background: $card-background;
+    padding: 20px 15px;
+    border-radius: $radius ;
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    figure{
+        .no-text {
+            display: none;
+            @include ipad{
+                display: block ;
+                width : 40px
+            }
+        }
+        img {
+            max-width: 130px;
+            // veriyi girdikten sonra htmlde width kaldırdık
+            cursor: pointer;
+            // küçük ekranlarda;
+            @include ipad {
+                display: none;
+            }
+        }
+        nav {
+            display: flex;
+            // menüyü alt alta aldı
+            flex-direction: column;
+            // aralarını açalım
+            gap:30px;
+            margin-top: 30px;
+            a {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                i{
+                  @include ipad {
+                    font-size: 25px;
+                  }  
+                }
+                span { 
+                    // sol tarafta görünmeyip ikonlar kalacak
+                    @include ipad {
+                        display: none;
+                    }
+                }
+            }
+          
+        }
+    }
+ 
+}
+
+
